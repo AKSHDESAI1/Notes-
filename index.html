@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/60f5ad3eb1.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Notes By AKSH DESAI</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3 sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fas fa-laptop-house mx-2 text-danger"></i>AKSH DESAI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col m-auto">
+                <h1 class="text-danger text-center"
+                    style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><i
+                        class="fas fa-book-reader mx-1"></i><span class="text-primary">N</span><span
+                        class="text-success">O</span><span class="text-warning">T</span><span
+                        class="text-success">E</span><span class="text-primary">S</span> <span></span></h1>
+                <form action="
+                ">
+                    <div class="mb-3">
+                        <label for="title1" class="form-label "><b>Title</b></label>
+                        <input type="text" class="form-control" required id="title1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="description1" class="form-label"><b>Description</b></label>
+                        <input type="text" class="form-control" id="description1" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" onclick="submit1()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+                <div>
+                    <h2 class="mb-3">Your Notes:- </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col" id="aary">
+                <div class="table-responsive ">
+
+                    <table class="table table-bordered table-hover">
+                        <thead class="bg-dark text-light">
+                            <tr>
+                                <th>No.</th>
+                                <th class="text-center">Title</th>
+                                <th class="text-center">Description</th>
+                                <th class="text-center">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody1">
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio src="/button-1.mp3" id="aud1"></audio>
+    <audio src="/button-2.mp3" id="aud2"></audio>
+    <audio src="/button-3.mp3" id="aud3"></audio>
+    <audio src="/button-4.mp3" id="aud4"></audio>
+    <audio src="/button-5.mp3" id="aud5"></audio>
+    <audio src="/button-6.mp3" id="aud6"></audio>
+    <audio src="/button-7.mp3" id="aud7"></audio>
+    <audio src="/button-8.mp3" id="aud8"></audio>
+    <audio src="/button-9.mp3" id="aud9"></audio>
+    <audio src="/button-10.mp3" id="aud10"></audio>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+        </script>
+
+
+    <script>
+        let aud1 = document.getElementById('aud1');
+        let aud2 = document.getElementById('aud2');
+        let aud3 = document.getElementById('aud3');
+        let aud4 = document.getElementById('aud4');
+        let aud5 = document.getElementById('aud5');
+        let aud6 = document.getElementById('aud6');
+        let aud7 = document.getElementById('aud7');
+        let aud8 = document.getElementById('aud8');
+        let aud9 = document.getElementById('aud9');
+        let aud10 = document.getElementById('aud10');
+        function submit1() {
+            let aary = Math.random() * 1000;
+            aary = parseInt(aary);
+            if (aary <= 100) {
+                aud1.play();
+            }
+            else if (aary <= 200) {
+                aud2.play();
+            }
+            else if (aary <= 300) {
+                aud3.play();
+            }
+            else if (aary <= 400) {
+                aud4.play();
+            }
+            else if (aary <= 500) {
+                aud5.play();
+            }
+            else if (aary <= 600) {
+                aud6.play();
+            }
+            else if (aary <= 700) {
+                aud7.play();
+            }
+            else if (aary <= 800) {
+                aud8.play();
+            }
+            else if (aary <= 900) {
+                aud9.play();
+            }
+            else if (aary <= 1000) {
+                aud10.play();
+            }
+            let title2 = document.getElementById('title1')
+            let title1 = title2.value;
+            let description2 = document.getElementById('description1')
+            let description1 = description2.value;
+            let tbody1 = document.getElementById('tbody1');
+
+            if (localStorage.getItem('aksh') == null) {
+                arr = [];
+                // inp = [title1, description1];
+                arr.push([title1, description1]);
+                // console.log(inp);
+                localStorage.setItem('aksh', JSON.stringify(arr));
+                title2.value = "";
+                description2.value = "";
+            }
+
+            else {
+                arr1 = localStorage.getItem('aksh');
+                arr = JSON.parse(arr1);
+                arr.push([title1, description1]);
+                localStorage.setItem('aksh', JSON.stringify(arr));
+                title2.value = "";
+                description2.value = "";
+            }
+
+            let valid = "";
+            arr.forEach((element, index) => {
+                let ran = Math.random() * 100;
+                ran = parseInt(ran);
+                if (ran <= 17) {
+                    color = 'table-primary';
+                }
+                else if (ran <= 34) {
+                    color = 'table-success';
+                }
+                else if (ran <= 51) {
+                    color = 'table-danger';
+                }
+                else if (ran <= 68) {
+                    color = 'table-success';
+                }
+                else if (ran <= 85) {
+                    color = 'table-info';
+                }
+                else if (ran <= 100) {
+                    color = 'table-warning';
+                }
+                valid += `<tr class=${color}>
+                                <td>${index + 1}</td>
+                                <td class="text-center">${element[0]}</td>
+                                <td class="text-center">${element[1]}</td>
+                                <td><button type="submit" class="btn btn-danger btn m-auto  d-flex" onclick="deleted(${index})">Delete</button></td>
+                            </tr>`;
+
+            });
+            if (arr.length != 0) {
+
+                tbody1.innerHTML = valid;
+            }
+            else {
+
+            }
+        }
+
+        function deleted(index1) {
+            let aary = Math.random() * 1000;
+            aary = parseInt(aary);
+            if (aary <= 100) {
+                aud1.play();
+            }
+            else if (aary <= 200) {
+                aud2.play();
+            }
+            else if (aary <= 300) {
+                aud3.play();
+            }
+            else if (aary <= 400) {
+                aud4.play();
+            }
+            else if (aary <= 500) {
+                aud5.play();
+            }
+            else if (aary <= 600) {
+                aud6.play();
+            }
+            else if (aary <= 700) {
+                aud7.play();
+            }
+            else if (aary <= 800) {
+                aud8.play();
+            }
+            else if (aary <= 900) {
+                aud9.play();
+            }
+            else if (aary <= 1000) {
+                aud10.play();
+            }
+            arr.splice(index1, 1);
+            localStorage.setItem('aksh', JSON.stringify(arr));
+            let valid = "";
+            arr.forEach((element, index) => {
+                let ran = Math.random() * 100;
+                ran = parseInt(ran);
+                if (ran <= 17) {
+                    color = 'table-primary';
+                }
+                else if (ran <= 34) {
+                    color = 'table-success';
+                }
+                else if (ran <= 51) {
+                    color = 'table-danger';
+                }
+                else if (ran <= 68) {
+                    color = 'table-success';
+                }
+                else if (ran <= 85) {
+                    color = 'table-info';
+                }
+                else if (ran <= 100) {
+                    color = 'table-warning';
+                }
+                valid += `<tr class="${color}">
+                                <td>${index + 1}</td>
+                                <td class="text-center">${element[0]}</td>
+                                <td class="text-center">${element[1]}</td>
+                                <td><button type="submit" class="btn btn-danger btn m-auto  d-flex" onclick="deleted(${index})">Delete</button></td>
+                            </tr>`;
+
+            });
+
+            tbody1.innerHTML = valid;
+        }
+    </script>
+
+
+
+</body>
+
+</html>
