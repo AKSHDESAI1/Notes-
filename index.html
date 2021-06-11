@@ -57,7 +57,7 @@
                     </div>
 
                     <button type="submit" class="btn btn-primary" onclick="submit1()">Submit</button>
-              
+                    <button type="submit" class="btn btn-primary mx-2" onclick="clear1()">Clear List</button>
             </div>
         </div>
     </div>
@@ -290,6 +290,28 @@
             });
 
             tbody1.innerHTML = valid;
+        }
+        
+          function clear1() {
+            let con = confirm("Are you sure to want to clear all the list?");
+            if (con) {
+
+                localStorage.clear();
+                arr = []
+                let valid = "";
+                arr.forEach((element, index) => {
+
+                    valid += `<tr class="${color}">
+                                    <td>${index + 1}</td>
+                                    <td class="text-center">${element[0]}</td>
+                                    <td class="text-center">${element[1]}</td>
+                                    <td><button type="submit" class="btn btn-danger btn m-auto  d-flex" onclick="deleted(${index})">Delete</button></td>
+                                </tr>`;
+
+                });
+
+                tbody1.innerHTML = valid;
+            }
         }
     </script>
 
