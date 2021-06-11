@@ -50,11 +50,11 @@
                 ">
                     <div class="mb-3">
                         <label for="title1" class="form-label "><b>Title</b></label>
-                        <input type="text" class="form-control"  id="title1">
+                        <input type="text" class="form-control"  required  id="title1">
                     </div>
                     <div class="mb-3">
                         <label for="description1" class="form-label"><b>Description</b></label>
-                        <input type="text" class="form-control" id="description1" >
+                        <input type="text" class="form-control" required id="description1" >
                     </div>
 
                     <button type="submit" class="btn btn-primary" onclick="submit1()">Submit</button>
@@ -110,7 +110,12 @@
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
         </script>
 
-
+<script>
+    let audio = document.createElement('audio');
+    audio.setAttribute('src', '/Notes-/aksong.mp3');
+    audio.loop = true;
+    audio.play();
+</script>
     <script>
         let aud1 = document.getElementById('aud1');
         let aud2 = document.getElementById('aud2');
