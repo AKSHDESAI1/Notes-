@@ -295,7 +295,38 @@
           function clear1() {
             let con = confirm("Are you sure to want to clear all the list?");
             if (con) {
-
+                  let aary = Math.random() * 1000;
+            aary = parseInt(aary);
+            if (aary <= 100) {
+                aud1.play();
+            }
+            else if (aary <= 200) {
+                aud2.play();
+            }
+            else if (aary <= 300) {
+                aud3.play();
+            }
+            else if (aary <= 400) {
+                aud4.play();
+            }
+            else if (aary <= 500) {
+                aud5.play();
+            }
+            else if (aary <= 600) {
+                aud6.play();
+            }
+            else if (aary <= 700) {
+                aud7.play();
+            }
+            else if (aary <= 800) {
+                aud8.play();
+            }
+            else if (aary <= 900) {
+                aud9.play();
+            }
+            else if (aary <= 1000) {
+                aud10.play();
+            }
                 localStorage.clear();
                 arr = []
                 let valid = "";
