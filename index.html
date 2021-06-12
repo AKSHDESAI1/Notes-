@@ -116,6 +116,47 @@
     audio.play();
 </script>
     <script>
+        if (localStorage.getItem('aksh') == null) {
+            arr = [];
+
+        }
+
+        else {
+            arr1 = localStorage.getItem('aksh');
+            arr = JSON.parse(arr1);
+            // localStorage.setItem('aksh', JSON.stringify(arr));
+
+        }
+        let valid = "";
+        arr.forEach((element, index) => {
+            let ran = Math.random() * 100;
+            ran = parseInt(ran);
+            if (ran <= 17) {
+                color = 'table-primary';
+            }
+            else if (ran <= 34) {
+                color = 'table-success';
+            }
+            else if (ran <= 51) {
+                color = 'table-danger';
+            }
+            else if (ran <= 68) {
+                color = 'table-success';
+            }
+            else if (ran <= 85) {
+                color = 'table-info';
+            }
+            else if (ran <= 100) {
+                color = 'table-warning';
+            }
+            valid += `<tr class=${color}>
+                                <td>${index + 1}</td>
+                                <td class="text-center">${element[0]}</td>
+                                <td class="text-center">${element[1]}</td>
+                                <td><button type="submit" class="btn btn-danger btn m-auto  d-flex" onclick="deleted(${index})">Delete</button></td>
+                            </tr>`;
+
+        });
         let aud1 = document.getElementById('aud1');
         let aud2 = document.getElementById('aud2');
         let aud3 = document.getElementById('aud3');
